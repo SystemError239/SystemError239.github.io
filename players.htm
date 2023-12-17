@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя веб-страница</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="index.htm"><img src="Алексей.jpg" alt="Home" style="position: absolute; top: 10px; left: 10px; width: 50px; height: 50px;"></a>
+    <h1><center>Игроки War Thunder</center></h1>
+    <p>Страница с описанием игроков War Thunder.</p>
+<body>
+    <div id="gif-container"></div>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ссылки на документы</title>
+    <script>
+        // JavaScript код для вставки ссылок
+        document.addEventListener("DOMContentLoaded", function() {
+            var linkContainer = document.getElementById("link-container");
+            // Создаем ссылку на PDF документ
+            linkContainer.innerHTML += "<p><a href='Боль.pdf' download>PDF Document</a></p>";
+            // Создаем ссылку на JPG изображение
+            linkContainer.innerHTML += "<p><a href='Гей.jpg' download>JPG Image</a></p>";
+            // И так далее, можно добавить ссылки на другие типы файлов
+        });
+    </script>
+</head>
+<body>
+    <h1>Ссылки на документы</h1>
+    <div id="link-container">
+    </div>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игрок WT</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var container = document.getElementById("content-container");
+            var image = document.createElement("img");
+            image.src = "Игрок.jpg";
+            image.alt = "Типичный игрок WT";
+            image.style.width = "200px"; // Установим размер изображения
+            var text = document.createElement("p");
+            text.textContent = "Я же не хожу Евреев щемить в мечеть...";
+
+            // Добавляем изображение и текст в контейнер
+            container.appendChild(image);
+            container.appendChild(text);
+        });
+    </script>
+</head>
+<body>
+    <h1>Типичный игрок и его цитата</h1>
+    <div id="content-container" class="container">
+    </div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о k/d в танках</title>
+    <script>
+        // JavaScript код для обработки информации о k/d
+        function processKDInfo() {
+            var kdInput = document.getElementById("kdInput").value;
+            var resultText = document.getElementById("result");
+            
+            // Обработка информации о k/d
+            if (kdInput < 1) {
+                resultText.textContent = "У вас k/d меньше 1 - вы бездарный бездарь.";
+            } else if (kdInput >= 1 && kdInput < 2) {
+                resultText.textContent = "У вас k/d от 1 до 2 - у вас есть руки и мозг.";
+            } else if (kdInput >= 2 && kdInput < 3) {
+                resultText.textContent = "У вас k/d от 2 до 3 - вы играете почти как я.";
+            } else {
+                resultText.textContent = "У вас k/d больше 3 - мировой топ!";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Информация о k/d в танках</h1>
+    <form>
+        <label for="kdInput">Введите ваш k/d:</label>
+        <input type="number" id="kdInput" step="0.01" required>
+        <button type="button" onclick="processKDInfo()">Обработать</button>
+    </form>
+    <p id="result"></p>
+</body>
+<body>
+
+<h2>Если хотите присоединиться к сообществу, заполните форму</h2>
+
+<<form action="feedback.php" method="post">
+    <label for="text_input">Имя и Фамилия</label><br>
+    <input type="text" id="text_input" name="user_text"><br>
+
+    <label for="check_box">Есть психические заболевания:</label><br>
+    <input type="checkbox" id="check_box" name="user_check" value="checked"><br>
+
+    <label for="radio_button">Пол:</label><br>
+    <input type="radio" id="radio_button" gender="user_radio" value="option1">Мужской<br>
+    <input type="radio" id="radio_button" gender="user_radio" value="option2">Женский<br>
+
+    <label for="select_list">Главный гейм-мастер WT:</label><br>
+    <select id="select_list" osel="user_select">
+      <option value="option1">Гений</option>
+      <option value="option2">Тупой осёл</option>
+      <option value="option3">Кто это?</option>
+    </select><br>
+
+    <input type="submit" name="submit" value="Отправить">
+</form>
+
+</body>
+</html>

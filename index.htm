@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя веб-страница</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="frame.htm"><img src="Алексей.jpg" alt="Home" style="position: absolute; top: 10px; left: 10px; width: 50px; height: 50px;"></a>
+    <h1><center>Добро пожаловать в клуб!</center></h1>
+    <p>Это главная страница о игре War Thunder.</p>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимация GIF</title>
+    <script>
+        // JavaScript код для отображения анимации
+        document.addEventListener("DOMContentLoaded", function() {
+            var gifContainer = document.getElementById("gif-container");
+            // Указываем путь к анимированному GIF изображению
+            gifContainer.innerHTML = "<img src='war-thunder-wt.gif' alt='Анимация'>";
+        });
+    </script>
+</head>
+<body>
+    <div id="gif-container"></div>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ссылки на документы</title>
+    <script>
+        // JavaScript код для вставки ссылок
+        document.addEventListener("DOMContentLoaded", function() {
+            var linkContainer = document.getElementById("link-container");
+            // Создаем ссылку на PDF документ
+            linkContainer.innerHTML += "<p><a href='Боль.pdf' download>PDF Document</a></p>";
+            // Создаем ссылку на JPG изображение
+            linkContainer.innerHTML += "<p><a href='Гей.jpg' download>JPG Image</a></p>";
+            // И так далее, можно добавить ссылки на другие типы файлов
+        });
+    </script>
+</head>
+<body>
+    <h1>Ссылки на документы</h1>
+    <div id="link-container">
+        <!-- Сюда будут добавлены ссылки -->
+    </div>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изображение и текст</title>
+    <style>
+        /* Стиль для изображения и текста */
+        .container {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    <script>
+        // JavaScript код для вставки изображения и текста
+        document.addEventListener("DOMContentLoaded", function() {
+            var container = document.getElementById("content-container");
+
+            // Создаем элементы для изображения и текста
+            var image = document.createElement("img");
+            image.src = "Игрок.jpg";
+            image.alt = "Типичный игрок WT";
+            image.style.width = "200px"; // Установим размер изображения
+            var text = document.createElement("p");
+            text.textContent = "Я же не хожу Еврев щемить в мечеть...";
+
+            // Добавляем изображение и текст в контейнер
+            container.appendChild(text);
+            container.appendChild(image);
+        });
+    </script>
+</head>
+<h2>Причины поиграть в WT</h2>
+<ol>
+  <li>У игры нет аналогов.</li>
+  <li>Каждый день по новому поражаешься тому, какие бывают тупые люди.</li>
+  <li>Очень веселое и тупое сообщество.</li>
+</ol>
+
+<h2>Причины никогда в это не играть</h2>
+<ul style="list-style-type:square">
+  <li>Можно сойти с ума.</li>
+  <li>Высокий порог входа.</li>
+  <li>Без доната будет очень сложно прокачаться.</li>
+</ul>
+</html>
